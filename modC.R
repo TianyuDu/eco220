@@ -1,0 +1,19 @@
+setwd("/Users/tianyudu/Documents/UToronto/Course/ECO220/DACM/eco220/data")
+
+library(readxl)
+
+# Load data.
+df.s1 <- read_excel("on_univ_col_16.xlsx", sheet=1)
+
+# ==== Interactive Tutorial Materials (page 65)
+# ==== Q1 ====
+# Get number of total observations
+n <- nrow(df.s1)
+
+# Mean and std.
+mu <- mean(df.s1$Salary)
+sigma <- sd(df.s1$Salar)
+
+# ==== Q2 ====
+df.s3 = read_excel("on_univ_col_16.xlsx", sheet=3)
+# (a) Generate
